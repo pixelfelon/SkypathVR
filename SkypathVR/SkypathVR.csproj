@@ -60,6 +60,32 @@
     <EnableProguard>False</EnableProguard>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Media.Common, Version=1.0.7.38909, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\net7mma\Common\bin\Release\Media.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Media.Cryptography">
+      <HintPath>..\..\..\net7mma\Rtp\bin\Release\Media.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="Media.Http">
+      <HintPath>..\..\..\net7mma\Rtsp\bin\Release\Media.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="Media.Ntp, Version=1.0.7.38910, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\net7mma\Rtp\bin\Release\Media.Ntp.dll</HintPath>
+    </Reference>
+    <Reference Include="Media.Rtp, Version=1.0.7.38910, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\net7mma\Rtp\bin\Release\Media.Rtp.dll</HintPath>
+    </Reference>
+    <Reference Include="Media.Rtsp, Version=1.0.7.39047, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\net7mma\Rtsp\bin\Release\Media.Rtsp.dll</HintPath>
+    </Reference>
+    <Reference Include="Media.Sdp, Version=1.0.7.38910, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\net7mma\Rtp\bin\Release\Media.Sdp.dll</HintPath>
+    </Reference>
     <Reference Include="Mono.Android" />
     <Reference Include="mscorlib" />
     <Reference Include="System" />
@@ -68,6 +94,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MjpegDecoderRtsp.cs" />
     <Compile Include="MjpegDecoder.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
@@ -88,7 +115,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Assets\" />
-    <Folder Include="RtspLib\" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\temp_logo.png" />
